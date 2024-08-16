@@ -23,6 +23,9 @@
             font-size: 0.75rem;
             padding: 0.25rem 0.5rem;
         }
+        textarea {
+            font-family: "Courier New", Courier, monospace;
+        }
     </style>
 </head>
 <body class="bg-gray-100 p-4">
@@ -54,11 +57,12 @@
     <!-- Section for file structure creation -->
     <div class="mb-8">
         <h2 class="text-2xl font-bold mb-4">Crear Estructura de Carpetas</h2>
-        <div class="grid grid-cols-4 gap-2 mb-4">
+        <div class="grid grid-cols-5 gap-2 mb-4">
             <button class="bg-blue-500 text-white p-1 rounded hover:bg-blue-600 half-size" onclick="addText('├── ')">├──</button>
             <button class="bg-blue-500 text-white p-1 rounded hover:bg-blue-600 half-size" onclick="addText('│   ')">│   </button>
             <button class="bg-blue-500 text-white p-1 rounded hover:bg-blue-600 half-size" onclick="addText('└── ')">└──</button>
             <button class="bg-blue-500 text-white p-1 rounded hover:bg-blue-600 half-size" onclick="addText('/')">/</button>
+            <button class="bg-blue-500 text-white p-1 rounded hover:bg-blue-600 half-size" onclick="addText('    ')">Espacios</button>
             <button class="bg-green-500 text-white p-1 rounded hover:bg-green-600 half-size" onclick="copyAll()">Copiar Todo</button>
             <button class="bg-yellow-500 text-white p-1 rounded hover:bg-yellow-600 half-size" onclick="saveFile()">Guardar Archivo</button>
             <button class="bg-red-500 text-white p-1 rounded hover:bg-red-600 half-size" onclick="undo()">Deshacer</button>
